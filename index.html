@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Princess | Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding-top: 70px;
+      background: #c599b0;
+      color: #040404;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background: #111 !important;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #D15384, #0E1115);
+      padding: 120px 0;
+    }
+
+    .profile-pic {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      padding: 6px;
+      background: linear-gradient(135deg, #D15384, #2575fc);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      margin: auto;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-pic:hover img {
+      transform: scale(1.08);
+    }
+
+    h1, h5 {
+      color: #dbd4d4;
+    }
+
+    h2{
+      color: #111;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    p {
+      color: #cbd5e1;
+    }
+
+    .modern-card {
+      background: #712a4f;
+      border-radius: 18px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      transition: all 0.35s ease;
+    }
+
+    .modern-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 45px rgba(0,0,0,0.8);
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card a {
+      margin-top: auto;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2575fc, #6a11cb);
+      border: none;
+      border-radius: 25px;
+      padding: 10px 24px;
+    }
+
+    .btn-light {
+      border-radius: 25px;
+    }
+
+    .form-control {
+      background: #af83a1;
+      border: 1px solid #30363d;
+      color: #e5e7eb;
+    }
+
+    .form-control::placeholder {
+      color: #0f0f11;
+    }
+
+    .form-control:focus {
+      background: #fff9f9;
+      color: #191717;
+      border-color: #2575fc;
+      box-shadow: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Princess</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start">
+        <h1 class="display-4 fw-bold">Hi, I'm Princess 👋</h1>
+        <p class="lead">Beginner Web Developer building modern websites</p>
+        <a href="#projects" class="btn btn-light btn-lg mt-3">View My Projects</a>
+      </div>
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <div class="profile-pic">
+          <img src="images/profile.jpg" alt="Princess profile picture">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h2>About Me</h2>
+      </div>
+      <div class="col-md-8">
+        <div class="modern-card">
+          <p>
+            I'm <strong>Princess</strong>, a beginner web developer who enjoys building
+            clean, responsive, and visually appealing websites using HTML,
+            CSS, and Bootstrap.
+          </p>
+          <p>
+            I’m passionate about learning new technologies and improving my
+            frontend development skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">My Services</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="modern-card text-center">
+          <div class="icon">🎨</div>
+          <h5>Web Design</h5>
+          <p>Modern, clean, and user-friendly designs.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="modern-card text-center">
+          <div class="icon">💻</div>
+          <h5>Frontend Development</h5>
+          <p>Responsive layouts using Bootstrap.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="modern-card text-center">
+          <div class="icon">📚</div>
+          <h5>Student Projects</h5>
+          <p>Beginner-friendly web applications.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">My Projects</h2>
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="modern-card project-card">
+          <h5>Login System</h5>
+          <p>Simple login page using HTML and CSS.</p>
+          <a href="https://github.com/pbanoy553158-hash/login-system" target="_blank" class="btn btn-primary">
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="modern-card project-card">
+          <h5>Portfolio Website</h5>
+          <p>Personal portfolio built with Bootstrap.</p>
+          <a href="https://github.com/pbanoy553158-hash/portfolio" target="_blank" class="btn btn-primary">
+            View Project →
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="modern-card project-card">
+          <h5>Todo App</h5>
+          <p>Beginner-friendly task management app.</p>
+          <a href="https://github.com/pbanoy553158-hash/todo-app" target="_blank" class="btn btn-primary">
+            View Project →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="modern-card">
+          <form>
+            <input class="form-control mb-3" placeholder="Name">
+            <input class="form-control mb-3" placeholder="Email">
+            <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+            <button class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-4">
+  <p>© 2026 Princess Mae | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
